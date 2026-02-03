@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Python Click Game</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; }
+      .card { padding: 16px; border: 1px solid #ddd; border-radius: 12px; }
+      button { padding: 10px 14px; border-radius: 10px; border: 1px solid #888; cursor: pointer; }
+      #score { font-size: 22px; font-weight: 700; }
+    </style>
+  </head>
+
+  <body>
+    <h1>🎮 Python Click Game</h1>
+
+    <div class="card">
+      <p>Click the button as many times as you can in <b>10 seconds</b>.</p>
+      <p>Score: <span id="score">0</span></p>
+      <button id="btn">Click me!</button>
+      <button id="start">Start / Restart</button>
+      <p id="status"></p>
+    </div>
+
+    <!-- Python code -->
+    <script type="py" src="main.py"></script>
+  </body>
+</html>
